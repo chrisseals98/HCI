@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Donate - WaterMonsterProject</title>
+    <meta property="og:title" content="Donate - WaterMonsterProject" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Karla;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/axolotllogo-1500h1.jpg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./donate.css" rel="stylesheet" />
+
+      <div class="donate-container">
+        <div id="banner" data-persistence="true" class="banner-banner">
+          <div class="banner-captions">
+            <div class="banner-caption">
+              <span class="banner-text">
+                <span>
+                  Get updates and action alerts from Helpa by joining our
+                </span>
+              </span>
+              <a
+                href="https://medium.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="banner-link"
+              >
+                <span>newsletter</span>
+              </a>
+            </div>
+            <a href="https://medium.com" class="banner-link1">
+              <div class="banner-caption1">
+                <span class="banner-text1"><span>Join our</span></span>
+                <span class="banner-text2"><span>newsletter</span></span>
+              </div>
+            </a>
+          </div>
+          <div id="close" class="banner-close">
+            <svg viewBox="0 0 1024 1024" class="banner-icon">
+              <path
+                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <header data-thq="thq-navbar" class="donate-navbar-interactive">
+          <a href="index.html" class="donate-navlink">
+            <img
+              alt="logo"
+              src="public/axolotllogo-1500h.jpg"
+              class="donate-image"
+            />
+          </a>
+          <div data-thq="thq-navbar-nav" class="donate-desktop-menu">
+            <nav class="donate-links">
+              <a href="index.html" class="donate-link navLink">Home</a>
+              <a href="index.html" class="donate-link1 navLink">About</a>
+              <a href="news.html" class="donate-link2 navLink">News</a>
+              <a href="donate.html" class="donate-link3 navLink">Donate</a>
+              <a href="index.html" class="donate-link4 navLink">Contact</a>
+            </nav>
+            <div class="donate-buttons">
+              <label class="donate-text">
+                <span>Please Act Now!</span>
+                <br />
+              </label>
+              <div class="donate-container01">
+                <a href="donate.html" class="donate-navlink1 button">Donate</a>
+                <div class="donate-container02">
+                  <div class="donate-container03">
+                    <!-- Display the countdown timer in an element -->
+                    <p id="demo"></p>
+
+                    <script>
+                      // Set the date we're counting down to
+                      var countDownDate = new Date('Jan 5, 2024 15:37:25').getTime();
+
+                      // Update the count down every 1 second
+                      var x = setInterval(function() {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Display the result in the element with id='demo'
+                        document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h '
+                        + minutes + 'm ' + seconds + 's ';
+
+                        // If the count down is finished, write some text
+                        if (distance < 0) {
+                          clearInterval(x);
+                          document.getElementById('demo').innerHTML = 'EXPIRED';
+                        }
+                      }, 1000);
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-thq="thq-burger-menu" class="donate-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="donate-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="donate-mobile-menu">
+            <div class="donate-nav">
+              <div class="donate-top">
+                <img
+                  alt="image"
+                  src="public/axolotllogo-1500h.jpg"
+                  class="donate-logo"
+                />
+                <div class="donate-container04">
+                  <label class="donate-text03">
+                    <span>Please Act Now!</span>
+                    <br />
+                  </label>
+                  <div class="donate-container05">
+                    <div class="donate-buttons1">
+                      <a href="donate.html" class="donate-login button">
+                        <span>
+                          <span>Donate</span>
+                          <br />
+                        </span>
+                      </a>
+                      <div class="donate-container06">
+                        <div class="donate-container07">
+                          <!-- Display the countdown timer in an element -->
+                          <p id="demo"></p>
+
+                          <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date('Jan 5, 2024 15:37:25').getTime();
+
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+
+                              // Get today's date and time
+                              var now = new Date().getTime();
+
+                              // Find the distance between now and the count down date
+                              var distance = countDownDate - now;
+
+                              // Time calculations for days, hours, minutes and seconds
+                              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                              // Display the result in the element with id='demo'
+                              document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h '
+                              + minutes + 'm ' + seconds + 's ';
+
+                              // If the count down is finished, write some text
+                              if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById('demo').innerHTML = 'EXPIRED';
+                              }
+                            }, 1000);
+                          </script>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-thq="thq-close-menu" class="donate-close-menu">
+                  <svg viewBox="0 0 1024 1024" class="donate-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav class="donate-links1">
+                <a href="index.html" class="donate-navlink2">Home</a>
+                <a href="donate.html" class="donate-navlink3">Donate</a>
+                <a href="news.html" class="donate-navlink4">News</a>
+              </nav>
+            </div>
+            <div>
+              <svg viewBox="0 0 950.8571428571428 1024" class="donate-icon04">
+                <path
+                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                ></path></svg
+              ><svg viewBox="0 0 877.7142857142857 1024" class="donate-icon06">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path></svg
+              ><svg viewBox="0 0 602.2582857142856 1024" class="donate-icon08">
+                <path
+                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </header>
+        <div class="donate-content">
+          <div class="donate-header">
+            <span class="donate-heading">Donate Now!</span>
+            <span class="donate-caption">
+              Every Donation Helps Save an Axolotl!
+            </span>
+          </div>
+          <div class="donate-amount">
+            <div class="donate-row">
+              <button class="donate-button button">$10</button>
+              <button class="donate-button1 button">$50</button>
+            </div>
+            <div class="donate-row1">
+              <button class="donate-button2 button">$100</button>
+              <button class="donate-button3 button">Custom</button>
+            </div>
+          </div>
+        </div>
+        <div class="donate-main">
+          <div class="donate-content01">
+            <div class="donate-hero-section">
+              <div class="donate-header01">
+                <h1 class="donate-heading1">You can make a difference</h1>
+                <p class="donate-caption1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+              </div>
+              <div class="donate-buttons2">
+                <button class="donate-button4 button">
+                  <span>Join our newsletter</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="donate-image1"></div>
+        </div>
+        <section class="donate-mission">
+          <div class="donate-content02">
+            <div class="donate-main1">
+              <span class="donate-title">Our Mission</span>
+              <div class="donate-header02">
+                <h2 class="donate-heading2">
+                  Hepa has been working to free animals from cruelty and
+                  institutionalized exploitation around the world.
+                </h2>
+                <p class="donate-caption2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="donate-highlights">
+              <div class="donate-highlight">
+                <h3 class="donate-title1">Action</h3>
+                <p class="donate-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
+              <div class="donate-highlight1">
+                <h3 class="donate-title2">Help</h3>
+                <p class="donate-description1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="donate-images">
+            <img
+              alt="image"
+              src="public/mission-1-400w.png"
+              class="donate-image2"
+            />
+            <div class="donate-row2">
+              <img
+                alt="image"
+                src="public/mission-2-400w.png"
+                class="donate-image3"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="donate-quote-one">
+          <div class="donate-quote-content">
+            <h2 class="donate-quote">
+              “Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.”
+            </h2>
+            <div class="donate-quoted">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE1fHxwb3RyYWl0fGVufDB8fHx8MTY3MDkyNjgxNQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                class="donate-image4"
+              />
+              <p class="donate-caption3">Michael Belfort, @helpa</p>
+            </div>
+          </div>
+        </section>
+        <section class="donate-quote-two">
+          <div class="donate-content03">
+            <div class="donate-video">
+              <video
+                src=""
+                poster="public/video-1400w.png"
+                class="donate-video1"
+              ></video>
+              <div class="donate-play">
+                <div class="donate-button5">
+                  <svg
+                    viewBox="0 0 808.5942857142857 1024"
+                    class="donate-icon10"
+                  >
+                    <path
+                      d="M790.857 529.714l-758.857 421.714c-17.714 9.714-32 1.143-32-18.857v-841.143c0-20 14.286-28.571 32-18.857l758.857 421.714c17.714 9.714 17.714 25.714 0 35.429z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="donate-quote-content1">
+              <h2 class="donate-quote1">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+              </h2>
+              <div class="donate-quoted1">
+                <p class="donate-caption4">Andrew Gonzalez</p>
+                <p class="donate-caption5">@ihelpyou</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="donate-donation-use">
+          <div class="donate-header03">
+            <h2 class="donate-heading3">
+              Your donations will be used to help animals.
+            </h2>
+            <p class="donate-caption6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+          </div>
+          <div class="donate-accordion">
+            <div
+              data-role="accordion-container"
+              class="accordion-element donate-element"
+            >
+              <div class="donate-header04">
+                <h3 class="donate-text10">
+                  Lorem ipsum dolor sit ametna aliqua.
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name24"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="donate-text11">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element donate-element1"
+            >
+              <div class="donate-header05">
+                <h3 class="donate-text12">
+                  Lorem ipsum dolor sit ametna aliqua.
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name25"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="donate-text13">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element donate-element2"
+            >
+              <div class="donate-header06">
+                <h3 class="donate-text14">
+                  Lorem ipsum dolor sit ametna aliqua.
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name26"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="donate-text15">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element donate-element3"
+            >
+              <div class="donate-header07">
+                <h3 class="donate-text16">
+                  Lorem ipsum dolor sit ametna aliqua.
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name27"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="donate-text17">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element donate-element4"
+            >
+              <div class="donate-header08">
+                <h3 class="donate-text18">
+                  Lorem ipsum dolor sit ametna aliqua.
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name28"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="donate-text19">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="donate-container09">
+                <script>
+                  /*
+                   Accordion - Code Embed
+                   */
+                   const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+                   const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+                   const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+                   const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+                   accordionContents.forEach((accordionContent) => {
+                       accordionContent.style.display = 'none'; //Hides all accordion contents
+                   });
+
+                   accordionIconsClosed.forEach((icon) => {
+                     icon.style.display = 'flex'
+                   })
+
+                   accordionIconsOpen.forEach((icon) => {
+                     icon.style.display = 'none'
+                   })
+
+                   accordionContainers.forEach((accordionContainer, index) => {
+                       accordionContainer.addEventListener('click', () => {
+                           if (accordionContents[index].style.display === 'flex') {
+                               // If the accordion is already open, close it
+                               accordionContents[index].style.display = 'none';
+                               accordionIconsClosed[index].style.display = 'flex';
+                               accordionIconsOpen[index].style.display = 'none'
+                           } else {
+                               // If the accordion is closed, open it
+                               accordionContents.forEach((accordionContent) => {
+                                   accordionContent.style.display = 'none'; //Hides all accordion contents
+                               });
+
+                               accordionIconsClosed.forEach((accordionIcon) => {
+                                   accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                               });
+
+                               accordionIconsOpen.forEach((accordionIcon) => {
+                                 accordionIcon.style.display = 'none';
+                               })
+
+                               accordionContents[index].style.display = 'flex'; // Shows accordion content
+                               accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                               accordionIconsOpen[index].style.display = 'flex';
+                           }
+                       });
+                   });
+                </script>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="donate-updates">
+          <div class="donate-content09">
+            <div class="donate-details">
+              <div class="donate-header09">
+                <h2 class="donate-heading4">
+                  Get updates and action alerts from Helpa by joining our
+                  newsletter
+                </h2>
+                <p class="donate-caption7">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.”
+                </p>
+              </div>
+              <div class="donate-action">
+                <div class="donate-input">
+                  <input
+                    type="text"
+                    placeholder="Email address"
+                    class="donate-textinput input"
+                  />
+                  <button class="button donate-button6">Subscribe</button>
+                </div>
+                <div class="donate-agreement">
+                  <div class="donate-states">
+                    <div id="tos" class="donate-checkbox"></div>
+                    <div id="tos-active" class="donate-checkbox1">
+                      <svg viewBox="0 0 1024 1024" class="donate-icon12">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="donate-caption8">
+                    <label for="tos" class="donate-normal">
+                      I agree to the
+                    </label>
+                    <label for="tos" class="donate-bold">
+                      Terms and Conditions
+                    </label>
+                  </div>
+                  <div>
+                    <div class="donate-container11">
+                      <script>
+                        // Create a boolean to represent the state of the toggle
+                        let tosToggle = false;
+
+                        // Add event listeners to the divs and labels
+                        document.getElementById('tos').addEventListener('click', toggleTos);
+                        document.getElementById('tos-active').addEventListener('click', toggleTos);
+                        document.querySelectorAll('label[for=tos]').forEach(label => label.addEventListener('click', toggleTos));
+
+                        // Define the toggleTos function to hide/show the elements based on the state of the toggle
+                        function toggleTos() {
+                          if (tosToggle) {
+                            document.getElementById('tos').style.display = 'flex';
+                            document.getElementById('tos-active').style.display = 'none';
+                          } else {
+                            document.getElementById('tos').style.display = 'none';
+                            document.getElementById('tos-active').style.display = 'flex';
+                          }
+                          tosToggle = !tosToggle;
+                        }
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="donate-slider">
+              <div class="donate-slides">
+                <div class="slide-active slide">
+                  <img
+                    alt="image"
+                    src="public/slide-1-1400w.png"
+                    class="donate-image5"
+                  />
+                  <span class="donate-text20">
+                    WFH One year on. Here’s what we’ve learned.
+                  </span>
+                </div>
+                <div class="slide">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1670991761566-534b07539db5?ixid=Mnw5MTMyMXwwfDF8YWxsfDEzfHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="donate-image6"
+                  />
+                  <span class="donate-text21">
+                    <span>This is a test slide</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="slide">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1670087670280-7a3e71a7efa6?ixid=Mnw5MTMyMXwwfDF8YWxsfDE1fHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="donate-image7"
+                  />
+                  <span class="donate-text24">
+                    <span>This one also!</span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+              <div class="donate-buttons-container">
+                <div class="donate-buttons3">
+                  <button id="previous-slide" class="donate-previous button">
+                    <svg viewBox="0 0 1024 1024" class="donate-icon14">
+                      <path d="M32 512l480 480v-288h512v-384h-512v-288z"></path>
+                    </svg>
+                  </button>
+                  <button id="next-slide" class="donate-next button">
+                    <svg viewBox="0 0 1024 1024" class="donate-icon16">
+                      <path d="M992 512l-480-480v288h-512v384h512v288z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="donate-footer">
+          <div class="donate-top1">
+            <div class="branding-branding">
+              <img alt="image" src="public/logo.svg" class="branding-logo" />
+              <h2 class="branding-company-name"><span>Helpa</span></h2>
+            </div>
+            <nav class="donate-navigation-links">
+              <a href="index.html" class="donate-link5 navLink">Mission</a>
+              <a href="index.html" class="donate-link6 navLink">Take Action</a>
+              <a href="index.html" class="donate-link7 navLink">News</a>
+              <a href="index.html" class="donate-link8 navLink">Contact</a>
+            </nav>
+          </div>
+          <div class="donate-middle">
+            <span class="donate-text27">
+              +0 222.345.987 office@helpa.template
+            </span>
+            <span class="donate-text28">
+              Forge Co.13G Eagle Blvd.Nashville, TN 37011-5678
+            </span>
+          </div>
+          <div class="donate-bottom">
+            <span class="donate-copyright">
+              © Copyright WaterMonster – 2023
+            </span>
+          </div>
+        </footer>
+        <div>
+          <div class="donate-container13">
+            <script>
+              const slides = document.querySelectorAll('.slide');
+              let currentSlide = 0;
+
+              function showSlide(n) {
+                slides[currentSlide].classList.remove('slide-active');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('slide-active');
+              }
+
+              const previousSlideButton = document.querySelector('#previous-slide');
+              previousSlideButton.addEventListener('click', () => {
+                showSlide(currentSlide - 1);
+              });
+
+              const nextSlideButton = document.querySelector('#next-slide');
+              nextSlideButton.addEventListener('click', () => {
+                showSlide(currentSlide + 1);
+              });
+            </script>
+          </div>
+        </div>
+        <div>
+          <div class="donate-container15">
+            <script>
+              function setCookie(name, value, days) {
+                // Set the cookie with the given name, value, and expiration time (in days)
+                let expires = '';
+                if (days) {
+                  let date = new Date();
+                  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                  expires = '; expires=' + date.toUTCString();
+                }
+                document.cookie = name + '=' + (value || '') + expires + '; path=/';
+              }
+
+              function getCookie(name) {
+                // Get the value of the cookie with the given name
+                let nameEQ = name + '=';
+                let ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                  let c = ca[i];
+                  while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                  if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+              }
+
+              function removeCookie(name) {
+                // Remove the cookie with the given name
+                setCookie(name, '', -1); // Set the cookie with an expiration time of -1 days
+              }
+
+              document.getElementById('close').addEventListener('click', function(){
+                // Get the persistence value
+                let persistence = document.getElementById('banner').getAttribute('data-persistence');
+                if (persistence === 'true') {
+                  // If persistence is enabled, set a cookie to remember that the banner is closed
+                  setCookie('bannerClosed', 'true', 1); // Set the cookie with an expiration time of 1 day
+                } else {
+                  removeCookie('bannerClosed')
+                }
+                document.getElementById('banner').style.display = 'none'; // Hide the banner
+              });
+
+              window.addEventListener('load', function() {
+                // Check if the banner should be displayed or not
+                let bannerClosed = getCookie('bannerClosed');
+                if (bannerClosed === 'true') {
+                  // If the bannerClosed cookie is set, hide the banner
+                  document.getElementById('banner').style.display = 'none';
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

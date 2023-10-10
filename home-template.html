@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HomeTemplate - WaterMonsterProject</title>
+    <meta property="og:title" content="HomeTemplate - WaterMonsterProject" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Karla;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/axolotllogo-1500h1.jpg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./home-template.css" rel="stylesheet" />
+
+      <div class="home-template-container">
+        <div id="banner" data-persistence="true" class="banner-banner">
+          <div class="banner-captions">
+            <div class="banner-caption">
+              <span class="banner-text">
+                <span>
+                  Get updates and action alerts from Helpa by joining our
+                </span>
+              </span>
+              <a
+                href="https://medium.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="banner-link"
+              >
+                <span>newsletter</span>
+              </a>
+            </div>
+            <a href="https://medium.com" class="banner-link1">
+              <div class="banner-caption1">
+                <span class="banner-text1"><span>Join our</span></span>
+                <span class="banner-text2"><span>newsletter</span></span>
+              </div>
+            </a>
+          </div>
+          <div id="close" class="banner-close">
+            <svg viewBox="0 0 1024 1024" class="banner-icon">
+              <path
+                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <header data-thq="thq-navbar" class="home-template-navbar-interactive">
+          <a href="index.html" class="home-template-navlink">
+            <img
+              alt="logo"
+              src="public/axolotllogo-1500h.jpg"
+              class="home-template-image"
+            />
+          </a>
+          <div data-thq="thq-navbar-nav" class="home-template-desktop-menu">
+            <nav class="home-template-links">
+              <a href="index.html" class="home-template-link navLink">Home</a>
+              <a href="index.html" class="home-template-link1 navLink">About</a>
+              <a href="news.html" class="home-template-link2 navLink">News</a>
+              <a href="donate.html" class="home-template-link3 navLink">
+                Donate
+              </a>
+              <a href="index.html" class="home-template-link4 navLink">
+                Contact
+              </a>
+            </nav>
+            <div class="home-template-buttons">
+              <label class="home-template-text">
+                <span>Please Act Now!</span>
+                <br />
+              </label>
+              <div class="home-template-container01">
+                <a href="donate.html" class="home-template-navlink1 button">
+                  Donate
+                </a>
+                <div class="home-template-container02">
+                  <div class="home-template-container03">
+                    <!-- Display the countdown timer in an element -->
+                    <p id="demo"></p>
+
+                    <script>
+                      // Set the date we're counting down to
+                      var countDownDate = new Date('Jan 5, 2024 15:37:25').getTime();
+
+                      // Update the count down every 1 second
+                      var x = setInterval(function() {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Display the result in the element with id='demo'
+                        document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h '
+                        + minutes + 'm ' + seconds + 's ';
+
+                        // If the count down is finished, write some text
+                        if (distance < 0) {
+                          clearInterval(x);
+                          document.getElementById('demo').innerHTML = 'EXPIRED';
+                        }
+                      }, 1000);
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-thq="thq-burger-menu" class="home-template-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="home-template-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="home-template-mobile-menu">
+            <div class="home-template-top">
+              <img
+                alt="image"
+                src="public/axolotllogo-1500h.jpg"
+                class="home-template-logo"
+              />
+              <div class="home-template-container04">
+                <label class="home-template-text03">
+                  <span>Please Act Now!</span>
+                  <br />
+                </label>
+                <div class="home-template-container05">
+                  <div class="home-template-buttons1">
+                    <a href="donate.html" class="home-template-login button">
+                      <span>
+                        <span>Donate</span>
+                        <br />
+                      </span>
+                    </a>
+                    <div class="home-template-container06">
+                      <div class="home-template-container07">
+                        <!-- Display the countdown timer in an element -->
+                        <p id="demo"></p>
+
+                        <script>
+                          // Set the date we're counting down to
+                          var countDownDate = new Date('Jan 5, 2024 15:37:25').getTime();
+
+                          // Update the count down every 1 second
+                          var x = setInterval(function() {
+
+                            // Get today's date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now and the count down date
+                            var distance = countDownDate - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                            // Display the result in the element with id='demo'
+                            document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h '
+                            + minutes + 'm ' + seconds + 's ';
+
+                            // If the count down is finished, write some text
+                            if (distance < 0) {
+                              clearInterval(x);
+                              document.getElementById('demo').innerHTML = 'EXPIRED';
+                            }
+                          }, 1000);
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-thq="thq-close-menu" class="home-template-close-menu">
+                <svg viewBox="0 0 1024 1024" class="home-template-icon02">
+                  <path
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <nav class="home-template-links1">
+              <a href="index.html" class="home-template-navlink2">Home</a>
+              <a href="donate.html" class="home-template-navlink3">Donate</a>
+              <a href="news.html" class="home-template-navlink4">News</a>
+            </nav>
+          </div>
+        </header>
+        <section class="home-template-hero">
+          <div class="home-template-main">
+            <div class="home-template-content">
+              <div class="home-template-hero-section">
+                <div class="home-template-header">
+                  <h1 class="home-template-heading">
+                    You can make a difference
+                  </h1>
+                  <p class="home-template-caption">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
+                  </p>
+                </div>
+                <div class="home-template-buttons2">
+                  <button class="button"><span>Donate Now</span></button>
+                  <button class="home-template-button01 button">
+                    <span>Join our newsletter</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="home-template-image01"></div>
+          </div>
+          <div class="home-template-details-container">
+            <div class="home-template-details">
+              <div class="home-template-category">
+                <img
+                  alt="image"
+                  src="public/details-1.svg"
+                  class="home-template-image02"
+                />
+                <p class="home-template-text11">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+              <div class="home-template-category1">
+                <img
+                  alt="image"
+                  src="public/details-2.svg"
+                  class="home-template-image03"
+                />
+                <p class="home-template-text12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+              <div class="home-template-category2">
+                <img
+                  alt="image"
+                  src="public/details-3.svg"
+                  class="home-template-image04"
+                />
+                <p class="home-template-text13">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-template-mission">
+          <div class="home-template-content01">
+            <div class="home-template-main1">
+              <span class="home-template-title">Our Mission</span>
+              <div class="home-template-header01">
+                <h2 class="home-template-heading01">
+                  Hepa has been working to free animals from cruelty and
+                  institutionalized exploitation around the world.
+                </h2>
+                <p class="home-template-caption01">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="home-template-highlights">
+              <div class="home-template-highlight">
+                <h3 class="home-template-title1">Action</h3>
+                <p class="home-template-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
+              <div class="home-template-highlight1">
+                <h3 class="home-template-title2">Help</h3>
+                <p class="home-template-description1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="home-template-images">
+            <img
+              alt="image"
+              src="public/mission-1-400w.png"
+              class="home-template-image05"
+            />
+            <div class="home-template-row">
+              <img
+                alt="image"
+                src="public/mission-2-400w.png"
+                class="home-template-image06"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="home-template-petitions">
+          <div class="home-template-images1">
+            <img
+              alt="image"
+              src="public/petition-1400w.png"
+              class="home-template-image07"
+            />
+          </div>
+          <div class="home-template-content02">
+            <div class="home-template-main2">
+              <div class="home-template-header02">
+                <h2 class="home-template-heading02">
+                  Sign our petitions and make your voice heard for the animals
+                  that need your help.
+                </h2>
+                <p class="home-template-caption02">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="home-template-button02">
+              <button class="button"><span>Sign petition</span></button>
+            </div>
+          </div>
+        </section>
+        <section class="home-template-steps">
+          <div class="home-template-content03">
+            <div class="home-template-information">
+              <div class="home-template-main3">
+                <div class="home-template-header03">
+                  <h2 class="home-template-heading03">
+                    Making a difference lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod.
+                  </h2>
+                  <p class="home-template-caption03">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore.
+                  </p>
+                </div>
+              </div>
+              <div class="home-template-button04">
+                <button class="button"><span>Take action</span></button>
+              </div>
+            </div>
+            <div class="steps-steps-list">
+              <div class="steps-list">
+                <div class="steps-section">
+                  <div class="number-number number">
+                    <span class="number-text"><span>1</span></span>
+                  </div>
+                  <span class="steps-caption">
+                    <span>Lorem ipsum dolor sit amet</span>
+                  </span>
+                </div>
+                <div class="steps-divider"></div>
+                <div class="steps-section1">
+                  <div class="number-number number number-root-class-name">
+                    <span class="number-text"><span>2</span></span>
+                  </div>
+                  <span class="steps-caption1">
+                    <span>Duis aute irure dolor in reprehenderit</span>
+                  </span>
+                </div>
+                <div class="steps-divider1"></div>
+                <div class="steps-section2">
+                  <div class="number-number number number-root-class-name1">
+                    <span class="number-text"><span>3</span></span>
+                  </div>
+                  <span class="steps-caption2">
+                    <span>Excepteur sint occaecat cupidatat</span>
+                  </span>
+                </div>
+                <div class="steps-divider2"></div>
+                <div class="steps-section3">
+                  <div class="number-number number number-root-class-name2">
+                    <span class="number-text"><span>4</span></span>
+                  </div>
+                  <span class="steps-caption3">
+                    <span>Sed ut perspiciatis unde omnis</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-template-help">
+          <div class="home-template-help-content">
+            <div class="home-template-header04">
+              <h2 class="home-template-heading04">How can you help</h2>
+              <p class="home-template-caption04">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="home-template-switch">
+              <div id="individual" class="switch-active switch">
+                <span>Individuals</span>
+              </div>
+              <div id="company" class="switch"><span>Companies</span></div>
+            </div>
+          </div>
+          <div class="home-template-content04">
+            <div id="individuals-content" class="home-template-save">
+              <div class="home-template-content05">
+                <div class="home-template-main4">
+                  <div class="home-template-header05">
+                    <h2 class="home-template-heading05">
+                      This is the Individuals Tab
+                    </h2>
+                    <p class="home-template-caption05">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                  <div class="home-template-highlights1">
+                    <div class="home-template-highlight2">
+                      <h3 class="home-template-title3">60%</h3>
+                      <p class="home-template-description2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      </p>
+                    </div>
+                    <div class="home-template-highlight3">
+                      <h3 class="home-template-title4">40%</h3>
+                      <p class="home-template-description3">
+                        Excepteur sint occaecat cupidatat non proident
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-template-button06">
+                  <button class="button">
+                    <span class="home-template-text18">Take Action</span>
+                  </button>
+                  <button class="button">
+                    <span class="home-template-text19">Learn More</span>
+                  </button>
+                </div>
+              </div>
+              <div class="home-template-images2">
+                <img
+                  alt="image"
+                  src="public/help-1400w.png"
+                  class="home-template-image08"
+                />
+              </div>
+            </div>
+            <div id="companies-content" class="home-template-companies">
+              <div class="home-template-content06">
+                <div class="home-template-main5">
+                  <div class="home-template-header06">
+                    <h2 class="home-template-heading06">
+                      This is the Companies Tab
+                    </h2>
+                    <p class="home-template-caption06">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                  <div class="home-template-highlights2">
+                    <div class="home-template-highlight4">
+                      <h3 class="home-template-title5">55%</h3>
+                      <p class="home-template-description4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      </p>
+                    </div>
+                    <div class="home-template-highlight5">
+                      <h3 class="home-template-title6">45%</h3>
+                      <p class="home-template-description5">
+                        Excepteur sint occaecat cupidatat non proident
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-template-button09">
+                  <button class="button"><span>Take action</span></button>
+                  <button class="button"><span>Learn more</span></button>
+                </div>
+              </div>
+              <div class="home-template-images3">
+                <img
+                  alt="image"
+                  src="public/help-1400w.png"
+                  class="home-template-image09"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="home-template-container09">
+              <script>
+                document.getElementById('individual').addEventListener('click', function() {
+                  document.getElementById('individuals-content').style.display = 'flex';
+                  document.getElementById('companies-content').style.display = 'none';
+                  this.classList.add('switch-active');
+                  document.getElementById('company').classList.remove('switch-active');
+                });
+                document.getElementById('company').addEventListener('click', function() {
+                  document.getElementById('companies-content').style.display = 'flex';
+                  document.getElementById('individuals-content').style.display = 'none';
+                  this.classList.add('switch-active');
+                  document.getElementById('individual').classList.remove('switch-active');
+                });
+              </script>
+            </div>
+          </div>
+        </section>
+        <section class="home-template-quote-one">
+          <div class="home-template-quote-content">
+            <h2 class="home-template-quote">
+              “Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.”
+            </h2>
+            <div class="home-template-quoted">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE1fHxwb3RyYWl0fGVufDB8fHx8MTY3MDkyNjgxNQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                class="home-template-image10"
+              />
+              <p class="home-template-caption07">Michael Belfort, @helpa</p>
+            </div>
+          </div>
+        </section>
+        <section class="home-template-quote-two">
+          <div class="home-template-content07">
+            <div class="home-template-video">
+              <video
+                src=""
+                poster="public/video-1400w.png"
+                class="home-template-video1"
+              ></video>
+              <div class="home-template-play">
+                <div class="home-template-button12">
+                  <svg
+                    viewBox="0 0 808.5942857142857 1024"
+                    class="home-template-icon04"
+                  >
+                    <path
+                      d="M790.857 529.714l-758.857 421.714c-17.714 9.714-32 1.143-32-18.857v-841.143c0-20 14.286-28.571 32-18.857l758.857 421.714c17.714 9.714 17.714 25.714 0 35.429z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="home-template-quote-content1">
+              <h2 class="home-template-quote1">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+              </h2>
+              <div class="home-template-quoted1">
+                <p class="home-template-caption08">Andrew Gonzalez</p>
+                <p class="home-template-caption09">@ihelpyou</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="home-template-donate">
+          <div class="home-template-content08">
+            <div class="home-template-header07">
+              <span class="home-template-heading07">
+                Donate now and help us help animals
+              </span>
+              <span class="home-template-caption10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </span>
+            </div>
+            <div class="home-template-amount">
+              <div class="home-template-row1">
+                <button class="home-template-button13 button">$5</button>
+                <button class="home-template-button14 button">$10</button>
+              </div>
+              <div class="home-template-row2">
+                <button class="home-template-button15 button">$20</button>
+                <button class="home-template-button16 button">$40</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="home-template-donation-use">
+          <div class="home-template-header08">
+            <h2 class="home-template-heading08">
+              Your donations will be used to help animals.
+            </h2>
+            <p class="home-template-caption11">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+          </div>
+          <div class="home-template-accordion">
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-template-element"
+            >
+              <div class="home-template-header09">
+                <h3 class="home-template-text22">
+                  Lorem ipsum dolor sit ametna aliqua.
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name19"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-template-text23">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-template-element1"
+            >
+              <div class="home-template-header10">
+                <h3 class="home-template-text24">
+                  Lorem ipsum dolor sit ametna aliqua.
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name20"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-template-text25">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-template-element2"
+            >
+              <div class="home-template-header11">
+                <h3 class="home-template-text26">
+                  Lorem ipsum dolor sit ametna aliqua.
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name21"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-template-text27">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-template-element3"
+            >
+              <div class="home-template-header12">
+                <h3 class="home-template-text28">
+                  Lorem ipsum dolor sit ametna aliqua.
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name22"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-template-text29">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="accordion-element home-template-element4"
+            >
+              <div class="home-template-header13">
+                <h3 class="home-template-text30">
+                  Lorem ipsum dolor sit ametna aliqua.
+                </h3>
+                <div
+                  class="icon-container-icon-container icon-container-root-class-name23"
+                >
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="icon-container-icon"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="icon-container-icon2"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div data-role="accordion-content" class="accordion-content">
+                <p class="home-template-text31">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="home-template-container11">
+                <script>
+                  /*
+                   Accordion - Code Embed
+                   */
+                   const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+                   const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+                   const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+                   const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+                   accordionContents.forEach((accordionContent) => {
+                       accordionContent.style.display = 'none'; //Hides all accordion contents
+                   });
+
+                   accordionIconsClosed.forEach((icon) => {
+                     icon.style.display = 'flex'
+                   })
+
+                   accordionIconsOpen.forEach((icon) => {
+                     icon.style.display = 'none'
+                   })
+
+                   accordionContainers.forEach((accordionContainer, index) => {
+                       accordionContainer.addEventListener('click', () => {
+                           if (accordionContents[index].style.display === 'flex') {
+                               // If the accordion is already open, close it
+                               accordionContents[index].style.display = 'none';
+                               accordionIconsClosed[index].style.display = 'flex';
+                               accordionIconsOpen[index].style.display = 'none'
+                           } else {
+                               // If the accordion is closed, open it
+                               accordionContents.forEach((accordionContent) => {
+                                   accordionContent.style.display = 'none'; //Hides all accordion contents
+                               });
+
+                               accordionIconsClosed.forEach((accordionIcon) => {
+                                   accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                               });
+
+                               accordionIconsOpen.forEach((accordionIcon) => {
+                                 accordionIcon.style.display = 'none';
+                               })
+
+                               accordionContents[index].style.display = 'flex'; // Shows accordion content
+                               accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                               accordionIconsOpen[index].style.display = 'flex';
+                           }
+                       });
+                   });
+                </script>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-template-updates">
+          <div class="home-template-content14">
+            <div class="home-template-details1">
+              <div class="home-template-header14">
+                <h2 class="home-template-heading09">
+                  Get updates and action alerts from Helpa by joining our
+                  newsletter
+                </h2>
+                <p class="home-template-caption12">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.”
+                </p>
+              </div>
+              <div class="home-template-action">
+                <div class="home-template-input">
+                  <input
+                    type="text"
+                    placeholder="Email address"
+                    class="home-template-textinput input"
+                  />
+                  <button class="button home-template-button17">
+                    Subscribe
+                  </button>
+                </div>
+                <div class="home-template-agreement">
+                  <div class="home-template-states">
+                    <div id="tos" class="home-template-checkbox"></div>
+                    <div id="tos-active" class="home-template-checkbox1">
+                      <svg viewBox="0 0 1024 1024" class="home-template-icon06">
+                        <path
+                          d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="home-template-caption13">
+                    <label for="tos" class="home-template-normal">
+                      I agree to the
+                    </label>
+                    <label for="tos" class="home-template-bold">
+                      Terms and Conditions
+                    </label>
+                  </div>
+                  <div>
+                    <div class="home-template-container13">
+                      <script>
+                        // Create a boolean to represent the state of the toggle
+                        let tosToggle = false;
+
+                        // Add event listeners to the divs and labels
+                        document.getElementById('tos').addEventListener('click', toggleTos);
+                        document.getElementById('tos-active').addEventListener('click', toggleTos);
+                        document.querySelectorAll('label[for=tos]').forEach(label => label.addEventListener('click', toggleTos));
+
+                        // Define the toggleTos function to hide/show the elements based on the state of the toggle
+                        function toggleTos() {
+                          if (tosToggle) {
+                            document.getElementById('tos').style.display = 'flex';
+                            document.getElementById('tos-active').style.display = 'none';
+                          } else {
+                            document.getElementById('tos').style.display = 'none';
+                            document.getElementById('tos-active').style.display = 'flex';
+                          }
+                          tosToggle = !tosToggle;
+                        }
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-template-slider">
+              <div class="home-template-slides">
+                <div class="slide-active slide">
+                  <img
+                    alt="image"
+                    src="public/slide-1-1400w.png"
+                    class="home-template-image11"
+                  />
+                  <span class="home-template-text32">
+                    WFH One year on. Here’s what we’ve learned.
+                  </span>
+                </div>
+                <div class="slide">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1670991761566-534b07539db5?ixid=Mnw5MTMyMXwwfDF8YWxsfDEzfHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="home-template-image12"
+                  />
+                  <span class="home-template-text33">
+                    <span>This is a test slide</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="slide">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1670087670280-7a3e71a7efa6?ixid=Mnw5MTMyMXwwfDF8YWxsfDE1fHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=1400"
+                    class="home-template-image13"
+                  />
+                  <span class="home-template-text36">
+                    <span>This one also!</span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+              <div class="home-template-buttons-container">
+                <div class="home-template-buttons3">
+                  <button
+                    id="previous-slide"
+                    class="home-template-previous button"
+                  >
+                    <svg viewBox="0 0 1024 1024" class="home-template-icon08">
+                      <path d="M32 512l480 480v-288h512v-384h-512v-288z"></path>
+                    </svg>
+                  </button>
+                  <button id="next-slide" class="home-template-next button">
+                    <svg viewBox="0 0 1024 1024" class="home-template-icon10">
+                      <path d="M992 512l-480-480v288h-512v384h512v288z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="home-template-footer">
+          <div class="home-template-top1">
+            <div class="branding-branding">
+              <img alt="image" src="public/logo.svg" class="branding-logo" />
+              <h2 class="branding-company-name"><span>Helpa</span></h2>
+            </div>
+            <nav class="home-template-navigation-links">
+              <a href="index.html" class="home-template-link5 navLink">
+                Mission
+              </a>
+              <a href="index.html" class="home-template-link6 navLink">
+                Take Action
+              </a>
+              <a href="index.html" class="home-template-link7 navLink">News</a>
+              <a href="index.html" class="home-template-link8 navLink">
+                Contact
+              </a>
+            </nav>
+          </div>
+          <div class="home-template-middle">
+            <span class="home-template-text39">
+              +0 222.345.987 office@helpa.template
+            </span>
+            <span class="home-template-text40">
+              Forge Co.13G Eagle Blvd.Nashville, TN 37011-5678
+            </span>
+          </div>
+          <div class="home-template-bottom">
+            <span class="home-template-copyright">
+              © Copyright WaterMonster – 2023
+            </span>
+          </div>
+        </footer>
+        <div>
+          <div class="home-template-container15">
+            <script>
+              const slides = document.querySelectorAll('.slide');
+              let currentSlide = 0;
+
+              function showSlide(n) {
+                slides[currentSlide].classList.remove('slide-active');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('slide-active');
+              }
+
+              const previousSlideButton = document.querySelector('#previous-slide');
+              previousSlideButton.addEventListener('click', () => {
+                showSlide(currentSlide - 1);
+              });
+
+              const nextSlideButton = document.querySelector('#next-slide');
+              nextSlideButton.addEventListener('click', () => {
+                showSlide(currentSlide + 1);
+              });
+            </script>
+          </div>
+        </div>
+        <div>
+          <div class="home-template-container17">
+            <script>
+              function setCookie(name, value, days) {
+                // Set the cookie with the given name, value, and expiration time (in days)
+                let expires = '';
+                if (days) {
+                  let date = new Date();
+                  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                  expires = '; expires=' + date.toUTCString();
+                }
+                document.cookie = name + '=' + (value || '') + expires + '; path=/';
+              }
+
+              function getCookie(name) {
+                // Get the value of the cookie with the given name
+                let nameEQ = name + '=';
+                let ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                  let c = ca[i];
+                  while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                  if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+              }
+
+              function removeCookie(name) {
+                // Remove the cookie with the given name
+                setCookie(name, '', -1); // Set the cookie with an expiration time of -1 days
+              }
+
+              document.getElementById('close').addEventListener('click', function(){
+                // Get the persistence value
+                let persistence = document.getElementById('banner').getAttribute('data-persistence');
+                if (persistence === 'true') {
+                  // If persistence is enabled, set a cookie to remember that the banner is closed
+                  setCookie('bannerClosed', 'true', 1); // Set the cookie with an expiration time of 1 day
+                } else {
+                  removeCookie('bannerClosed')
+                }
+                document.getElementById('banner').style.display = 'none'; // Hide the banner
+              });
+
+              window.addEventListener('load', function() {
+                // Check if the banner should be displayed or not
+                let bannerClosed = getCookie('bannerClosed');
+                if (bannerClosed === 'true') {
+                  // If the bannerClosed cookie is set, hide the banner
+                  document.getElementById('banner').style.display = 'none';
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>News - WaterMonsterProject</title>
+    <meta property="og:title" content="News - WaterMonsterProject" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Karla;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/axolotllogo-1500h1.jpg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./news.css" rel="stylesheet" />
+
+      <div class="news-container">
+        <div id="banner" data-persistence="true" class="banner-banner">
+          <div class="banner-captions">
+            <div class="banner-caption">
+              <span class="banner-text">
+                <span>
+                  Get updates and action alerts from Helpa by joining our
+                </span>
+              </span>
+              <a
+                href="https://medium.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="banner-link"
+              >
+                <span>newsletter</span>
+              </a>
+            </div>
+            <a href="https://medium.com" class="banner-link1">
+              <div class="banner-caption1">
+                <span class="banner-text1"><span>Join our</span></span>
+                <span class="banner-text2"><span>newsletter</span></span>
+              </div>
+            </a>
+          </div>
+          <div id="close" class="banner-close">
+            <svg viewBox="0 0 1024 1024" class="banner-icon">
+              <path
+                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <header data-thq="thq-navbar" class="news-navbar-interactive">
+          <a href="index.html" class="news-navlink">
+            <img
+              alt="logo"
+              src="public/axolotllogo-1500h.jpg"
+              class="news-image"
+            />
+          </a>
+          <div data-thq="thq-navbar-nav" class="news-desktop-menu">
+            <nav class="news-links">
+              <a href="index.html" class="news-link navLink">Home</a>
+              <a href="index.html" class="news-link1 navLink">About</a>
+              <a href="news.html" class="news-link2 navLink">News</a>
+              <a href="donate.html" class="news-link3 navLink">Donate</a>
+              <a href="index.html" class="news-link4 navLink">Contact</a>
+            </nav>
+            <div class="news-buttons">
+              <label class="news-text">
+                <span>Please Act Now!</span>
+                <br />
+              </label>
+              <div class="news-container01">
+                <a href="donate.html" class="news-navlink1 button">Donate</a>
+                <div class="news-container02">
+                  <div class="news-container03">
+                    <!-- Display the countdown timer in an element -->
+                    <p id="demo"></p>
+
+                    <script>
+                      // Set the date we're counting down to
+                      var countDownDate = new Date('Jan 5, 2024 15:37:25').getTime();
+
+                      // Update the count down every 1 second
+                      var x = setInterval(function() {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Display the result in the element with id='demo'
+                        document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h '
+                        + minutes + 'm ' + seconds + 's ';
+
+                        // If the count down is finished, write some text
+                        if (distance < 0) {
+                          clearInterval(x);
+                          document.getElementById('demo').innerHTML = 'EXPIRED';
+                        }
+                      }, 1000);
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-thq="thq-burger-menu" class="news-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="news-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="news-mobile-menu">
+            <div class="news-top">
+              <img
+                alt="image"
+                src="public/axolotllogo-1500h.jpg"
+                class="news-logo"
+              />
+              <div class="news-container04">
+                <label class="news-text03">
+                  <span>Please Act Now!</span>
+                  <br />
+                </label>
+                <div class="news-container05">
+                  <div class="news-buttons1">
+                    <a href="donate.html" class="news-login button">
+                      <span>
+                        <span>Donate</span>
+                        <br />
+                      </span>
+                    </a>
+                    <div class="news-container06">
+                      <div class="news-container07">
+                        <!-- Display the countdown timer in an element -->
+                        <p id="demo"></p>
+
+                        <script>
+                          // Set the date we're counting down to
+                          var countDownDate = new Date('Jan 5, 2024 15:37:25').getTime();
+
+                          // Update the count down every 1 second
+                          var x = setInterval(function() {
+
+                            // Get today's date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now and the count down date
+                            var distance = countDownDate - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                            // Display the result in the element with id='demo'
+                            document.getElementById('demo').innerHTML = days + 'd ' + hours + 'h '
+                            + minutes + 'm ' + seconds + 's ';
+
+                            // If the count down is finished, write some text
+                            if (distance < 0) {
+                              clearInterval(x);
+                              document.getElementById('demo').innerHTML = 'EXPIRED';
+                            }
+                          }, 1000);
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-thq="thq-close-menu" class="news-close-menu">
+                <svg viewBox="0 0 1024 1024" class="news-icon02">
+                  <path
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <nav class="news-links1">
+              <a href="index.html" class="news-navlink2">Home</a>
+              <a href="donate.html" class="news-navlink3">Donate</a>
+              <a href="news.html" class="news-navlink4">News</a>
+            </nav>
+          </div>
+        </header>
+        <section class="news-hero">
+          <div class="news-blog">
+            <div class="news-container08">
+              <a href="index.html" class="news-navlink5"></a>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div
+                  class="blog-post-card-blog-post-card blog-post-card-root-class-name3"
+                >
+                  <img
+                    alt="public/axolotllogo-1500h.jpg"
+                    src="public/axolotllogo-1500h.jpg"
+                    image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                    class="blog-post-card-image"
+                  />
+                  <div class="blog-post-card-container">
+                    <div class="blog-post-card-container1">
+                      <span class="blog-post-card-text">
+                        <span>News Article</span>
+                      </span>
+                      <span class="blog-post-card-text1">
+                        <span>October 5, 2023</span>
+                      </span>
+                    </div>
+                    <h1 class="blog-post-card-text2">
+                      <span>Formation of the Website</span>
+                    </h1>
+                    <span class="blog-post-card-text3">
+                      <span>
+                        Hello everyone, we welcome the formation of this website
+                        on this day: October 5, 2023. This is a high-fidelity
+                        design that was not originally intended.
+                      </span>
+                    </span>
+                    <div class="blog-post-card-container2">
+                      <div class="blog-post-card-profile">
+                        <img
+                          alt="public/axolotllogo-1500h.jpg"
+                          src="public/axolotllogo-1500h.jpg"
+                          class="blog-post-card-image1"
+                        />
+                        <span class="blog-post-card-text4">
+                          <span>Water Monster</span>
+                        </span>
+                      </div>
+                      <span class="blog-post-card-text5">Read More -&gt;</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div
+                  class="blog-post-card-blog-post-card blog-post-card-root-class-name"
+                >
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=400"
+                    image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                    class="blog-post-card-image"
+                  />
+                  <div class="blog-post-card-container">
+                    <div class="blog-post-card-container1">
+                      <span class="blog-post-card-text">
+                        <span>ENTERPRISE</span>
+                      </span>
+                      <span class="blog-post-card-text1">
+                        <span>3 days ago</span>
+                      </span>
+                    </div>
+                    <h1 class="blog-post-card-text2">
+                      <span>Lorem ipsum dolor sit amet</span>
+                    </h1>
+                    <span class="blog-post-card-text3">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non volutpat turpis. Mauris luctus rutrum mi ut
+                        rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing ...
+                      </span>
+                    </span>
+                    <div class="blog-post-card-container2">
+                      <div class="blog-post-card-profile">
+                        <img
+                          alt="profile"
+                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1200"
+                          class="blog-post-card-image1"
+                        />
+                        <span class="blog-post-card-text4">
+                          <span>Jane Doe</span>
+                        </span>
+                      </div>
+                      <span class="blog-post-card-text5">Read More -&gt;</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div
+                  class="blog-post-card-blog-post-card blog-post-card-root-class-name2"
+                >
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=400"
+                    image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                    class="blog-post-card-image"
+                  />
+                  <div class="blog-post-card-container">
+                    <div class="blog-post-card-container1">
+                      <span class="blog-post-card-text">
+                        <span>ENTERPRISE</span>
+                      </span>
+                      <span class="blog-post-card-text1">
+                        <span>3 days ago</span>
+                      </span>
+                    </div>
+                    <h1 class="blog-post-card-text2">
+                      <span>Lorem ipsum dolor sit amet</span>
+                    </h1>
+                    <span class="blog-post-card-text3">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non volutpat turpis. Mauris luctus rutrum mi ut
+                        rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing ...
+                      </span>
+                    </span>
+                    <div class="blog-post-card-container2">
+                      <div class="blog-post-card-profile">
+                        <img
+                          alt="profile"
+                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1200"
+                          class="blog-post-card-image1"
+                        />
+                        <span class="blog-post-card-text4">
+                          <span>Jane Doe</span>
+                        </span>
+                      </div>
+                      <span class="blog-post-card-text5">Read More -&gt;</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div
+                  class="blog-post-card-blog-post-card blog-post-card-root-class-name10"
+                >
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=400"
+                    image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                    class="blog-post-card-image"
+                  />
+                  <div class="blog-post-card-container">
+                    <div class="blog-post-card-container1">
+                      <span class="blog-post-card-text">
+                        <span>ENTERPRISE</span>
+                      </span>
+                      <span class="blog-post-card-text1">
+                        <span>3 days ago</span>
+                      </span>
+                    </div>
+                    <h1 class="blog-post-card-text2">
+                      <span>Lorem ipsum dolor sit amet</span>
+                    </h1>
+                    <span class="blog-post-card-text3">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non volutpat turpis. Mauris luctus rutrum mi ut
+                        rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing ...
+                      </span>
+                    </span>
+                    <div class="blog-post-card-container2">
+                      <div class="blog-post-card-profile">
+                        <img
+                          alt="profile"
+                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1200"
+                          class="blog-post-card-image1"
+                        />
+                        <span class="blog-post-card-text4">
+                          <span>Jane Doe</span>
+                        </span>
+                      </div>
+                      <span class="blog-post-card-text5">Read More -&gt;</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div
+                  class="blog-post-card-blog-post-card blog-post-card-root-class-name11"
+                >
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=400"
+                    image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                    class="blog-post-card-image"
+                  />
+                  <div class="blog-post-card-container">
+                    <div class="blog-post-card-container1">
+                      <span class="blog-post-card-text">
+                        <span>ENTERPRISE</span>
+                      </span>
+                      <span class="blog-post-card-text1">
+                        <span>3 days ago</span>
+                      </span>
+                    </div>
+                    <h1 class="blog-post-card-text2">
+                      <span>Lorem ipsum dolor sit amet</span>
+                    </h1>
+                    <span class="blog-post-card-text3">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non volutpat turpis. Mauris luctus rutrum mi ut
+                        rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing ...
+                      </span>
+                    </span>
+                    <div class="blog-post-card-container2">
+                      <div class="blog-post-card-profile">
+                        <img
+                          alt="profile"
+                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1200"
+                          class="blog-post-card-image1"
+                        />
+                        <span class="blog-post-card-text4">
+                          <span>Jane Doe</span>
+                        </span>
+                      </div>
+                      <span class="blog-post-card-text5">Read More -&gt;</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div
+                  class="blog-post-card-blog-post-card blog-post-card-root-class-name9"
+                >
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=400"
+                    image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                    class="blog-post-card-image"
+                  />
+                  <div class="blog-post-card-container">
+                    <div class="blog-post-card-container1">
+                      <span class="blog-post-card-text">
+                        <span>ENTERPRISE</span>
+                      </span>
+                      <span class="blog-post-card-text1">
+                        <span>3 days ago</span>
+                      </span>
+                    </div>
+                    <h1 class="blog-post-card-text2">
+                      <span>Lorem ipsum dolor sit amet</span>
+                    </h1>
+                    <span class="blog-post-card-text3">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non volutpat turpis. Mauris luctus rutrum mi ut
+                        rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing ...
+                      </span>
+                    </span>
+                    <div class="blog-post-card-container2">
+                      <div class="blog-post-card-profile">
+                        <img
+                          alt="profile"
+                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1200"
+                          class="blog-post-card-image1"
+                        />
+                        <span class="blog-post-card-text4">
+                          <span>Jane Doe</span>
+                        </span>
+                      </div>
+                      <span class="blog-post-card-text5">Read More -&gt;</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div
+                  class="blog-post-card-blog-post-card blog-post-card-root-class-name12"
+                >
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=400"
+                    image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                    class="blog-post-card-image"
+                  />
+                  <div class="blog-post-card-container">
+                    <div class="blog-post-card-container1">
+                      <span class="blog-post-card-text">
+                        <span>ENTERPRISE</span>
+                      </span>
+                      <span class="blog-post-card-text1">
+                        <span>3 days ago</span>
+                      </span>
+                    </div>
+                    <h1 class="blog-post-card-text2">
+                      <span>Lorem ipsum dolor sit amet</span>
+                    </h1>
+                    <span class="blog-post-card-text3">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non volutpat turpis. Mauris luctus rutrum mi ut
+                        rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing ...
+                      </span>
+                    </span>
+                    <div class="blog-post-card-container2">
+                      <div class="blog-post-card-profile">
+                        <img
+                          alt="profile"
+                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1200"
+                          class="blog-post-card-image1"
+                        />
+                        <span class="blog-post-card-text4">
+                          <span>Jane Doe</span>
+                        </span>
+                      </div>
+                      <span class="blog-post-card-text5">Read More -&gt;</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div
+                  class="blog-post-card-blog-post-card blog-post-card-root-class-name13"
+                >
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=400"
+                    image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                    class="blog-post-card-image"
+                  />
+                  <div class="blog-post-card-container">
+                    <div class="blog-post-card-container1">
+                      <span class="blog-post-card-text">
+                        <span>ENTERPRISE</span>
+                      </span>
+                      <span class="blog-post-card-text1">
+                        <span>3 days ago</span>
+                      </span>
+                    </div>
+                    <h1 class="blog-post-card-text2">
+                      <span>Lorem ipsum dolor sit amet</span>
+                    </h1>
+                    <span class="blog-post-card-text3">
+                      <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non volutpat turpis. Mauris luctus rutrum mi ut
+                        rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing ...
+                      </span>
+                    </span>
+                    <div class="blog-post-card-container2">
+                      <div class="blog-post-card-profile">
+                        <img
+                          alt="profile"
+                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1200"
+                          class="blog-post-card-image1"
+                        />
+                        <span class="blog-post-card-text4">
+                          <span>Jane Doe</span>
+                        </span>
+                      </div>
+                      <span class="blog-post-card-text5">Read More -&gt;</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="news-content">
+          <div class="news-details">
+            <div class="news-header">
+              <h2 class="news-heading">
+                Get updates and action alerts from Helpa by joining our
+                newsletter
+              </h2>
+              <p class="news-caption">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+            </div>
+            <div class="news-action">
+              <div class="news-input">
+                <input
+                  type="text"
+                  placeholder="Email address"
+                  class="news-textinput input"
+                />
+                <button class="button news-button">Subscribe</button>
+              </div>
+              <div class="news-agreement">
+                <div class="news-states">
+                  <div id="tos" class="news-checkbox"></div>
+                  <div id="tos-active" class="news-checkbox1">
+                    <svg viewBox="0 0 1024 1024" class="news-icon04">
+                      <path
+                        d="M823.168 225.835l-439.168 439.168-183.168-183.168c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l213.333 213.333c16.683 16.683 43.691 16.683 60.331 0l469.333-469.333c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="news-caption1">
+                  <label for="tos" class="news-normal">I agree to the</label>
+                  <label for="tos" class="news-bold">
+                    Terms and Conditions
+                  </label>
+                </div>
+                <div>
+                  <div class="news-container10">
+                    <script>
+                      // Create a boolean to represent the state of the toggle
+                      let tosToggle = false;
+
+                      // Add event listeners to the divs and labels
+                      document.getElementById('tos').addEventListener('click', toggleTos);
+                      document.getElementById('tos-active').addEventListener('click', toggleTos);
+                      document.querySelectorAll('label[for=tos]').forEach(label => label.addEventListener('click', toggleTos));
+
+                      // Define the toggleTos function to hide/show the elements based on the state of the toggle
+                      function toggleTos() {
+                        if (tosToggle) {
+                          document.getElementById('tos').style.display = 'flex';
+                          document.getElementById('tos-active').style.display = 'none';
+                        } else {
+                          document.getElementById('tos').style.display = 'none';
+                          document.getElementById('tos-active').style.display = 'flex';
+                        }
+                        tosToggle = !tosToggle;
+                      }
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-slider">
+            <div class="news-slides">
+              <div class="slide-active slide">
+                <img
+                  alt="image"
+                  src="public/slide-1-1400w.png"
+                  class="news-image1"
+                />
+                <span class="news-text09">
+                  WFH One year on. Here’s what we’ve learned.
+                </span>
+              </div>
+              <div class="slide">
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1670991761566-534b07539db5?ixid=Mnw5MTMyMXwwfDF8YWxsfDEzfHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=1400"
+                  class="news-image2"
+                />
+                <span class="news-text10">
+                  <span>This is a test slide</span>
+                  <br />
+                </span>
+              </div>
+              <div class="slide">
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1670087670280-7a3e71a7efa6?ixid=Mnw5MTMyMXwwfDF8YWxsfDE1fHx8fHx8Mnx8MTY3MTAxNTg5Ng&amp;ixlib=rb-4.0.3&amp;w=1400"
+                  class="news-image3"
+                />
+                <span class="news-text13">
+                  <span>This one also!</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="news-buttons-container">
+              <div class="news-buttons2">
+                <button id="previous-slide" class="news-previous button">
+                  <svg viewBox="0 0 1024 1024" class="news-icon06">
+                    <path d="M32 512l480 480v-288h512v-384h-512v-288z"></path>
+                  </svg>
+                </button>
+                <button id="next-slide" class="news-next button">
+                  <svg viewBox="0 0 1024 1024" class="news-icon08">
+                    <path d="M992 512l-480-480v288h-512v384h512v288z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="news-footer">
+          <div class="news-top1">
+            <div class="branding-branding">
+              <img alt="image" src="public/logo.svg" class="branding-logo" />
+              <h2 class="branding-company-name"><span>Helpa</span></h2>
+            </div>
+            <nav class="news-navigation-links">
+              <a href="index.html" class="news-link5 navLink">Mission</a>
+              <a href="index.html" class="news-link6 navLink">Take Action</a>
+              <a href="index.html" class="news-link7 navLink">News</a>
+              <a href="index.html" class="news-link8 navLink">Contact</a>
+            </nav>
+          </div>
+          <div class="news-middle">
+            <span class="news-text16">
+              +0 222.345.987 office@helpa.template
+            </span>
+            <span class="news-text17">
+              Forge Co.13G Eagle Blvd.Nashville, TN 37011-5678
+            </span>
+          </div>
+          <div class="news-bottom">
+            <span class="news-copyright">© Copyright WaterMonster – 2023</span>
+          </div>
+        </footer>
+        <div>
+          <div class="news-container12">
+            <script>
+              const slides = document.querySelectorAll('.slide');
+              let currentSlide = 0;
+
+              function showSlide(n) {
+                slides[currentSlide].classList.remove('slide-active');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('slide-active');
+              }
+
+              const previousSlideButton = document.querySelector('#previous-slide');
+              previousSlideButton.addEventListener('click', () => {
+                showSlide(currentSlide - 1);
+              });
+
+              const nextSlideButton = document.querySelector('#next-slide');
+              nextSlideButton.addEventListener('click', () => {
+                showSlide(currentSlide + 1);
+              });
+            </script>
+          </div>
+        </div>
+        <div>
+          <div class="news-container14">
+            <script>
+              function setCookie(name, value, days) {
+                // Set the cookie with the given name, value, and expiration time (in days)
+                let expires = '';
+                if (days) {
+                  let date = new Date();
+                  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                  expires = '; expires=' + date.toUTCString();
+                }
+                document.cookie = name + '=' + (value || '') + expires + '; path=/';
+              }
+
+              function getCookie(name) {
+                // Get the value of the cookie with the given name
+                let nameEQ = name + '=';
+                let ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                  let c = ca[i];
+                  while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                  if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+              }
+
+              function removeCookie(name) {
+                // Remove the cookie with the given name
+                setCookie(name, '', -1); // Set the cookie with an expiration time of -1 days
+              }
+
+              document.getElementById('close').addEventListener('click', function(){
+                // Get the persistence value
+                let persistence = document.getElementById('banner').getAttribute('data-persistence');
+                if (persistence === 'true') {
+                  // If persistence is enabled, set a cookie to remember that the banner is closed
+                  setCookie('bannerClosed', 'true', 1); // Set the cookie with an expiration time of 1 day
+                } else {
+                  removeCookie('bannerClosed')
+                }
+                document.getElementById('banner').style.display = 'none'; // Hide the banner
+              });
+
+              window.addEventListener('load', function() {
+                // Check if the banner should be displayed or not
+                let bannerClosed = getCookie('bannerClosed');
+                if (bannerClosed === 'true') {
+                  // If the bannerClosed cookie is set, hide the banner
+                  document.getElementById('banner').style.display = 'none';
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
